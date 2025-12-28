@@ -1,0 +1,114 @@
+.cards {
+  padding-top: 133px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+    justify-content: center;
+  }
+
+  &__item {
+    border-radius: 5%;
+    width: 196px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+        rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+        rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    }
+  }
+
+  &__img {
+    width: 180px;
+    height: 227px;
+    object-fit: cover;
+  }
+
+  &__item-contentb {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  &__title {
+    color: #dc56c5;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__subtitle {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__text {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  &__svg {
+    width: 7px;
+    height: 10px;
+    fill: #fff;
+  }
+
+  &__schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 80px;
+  }
+
+  &__schedule-item {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .active-page {
+    border: 1px solid #dc56c5;
+  }
+
+  &__schedule-text {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
