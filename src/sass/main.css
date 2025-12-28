@@ -62,6 +62,127 @@ body {
   outline: 1px solid red;
 }
 
+.hero {
+  padding-top: 24px;
+  padding-bottom: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(11, 11, 11, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.5)), url(../img/bghero.webp);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 183px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 53px;
+    padding-bottom: 193px;
+  }
+}
+
+.hero__logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.hero__title {
+  color: #dc56c5;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 30px;
+    margin-bottom: 27px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 50px;
+    margin-bottom: 52px;
+  }
+}
+
+.hero__form {
+  gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__form {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero__input {
+  padding: 10px 118px 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .hero__input {
+    padding: 10px 118px 10px 30px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__input {
+    padding: 10px 118px 10px 30px;
+    margin-bottom: 0;
+  }
+}
+
+.hero__inp {
+  padding: 10px 113px 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .hero__inp {
+    padding: 10px 113px 10px 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__inp {
+    padding: 10px 113px 10px 30px;
+  }
+}
+
 .cards {
   padding-top: 133px;
 }
