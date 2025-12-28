@@ -5,65 +5,77 @@
     <link rel="icon" type="image/svg+xml" href="/Vite_vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Booster</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
     
     <script type="module" crossorigin src="/Vite_vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-92f83d1a.css">
+    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-fd8c66d7.css">
   </head>
   <body>
-   <!-- <section>
+    <!-- <section>
        <h1>Lorem ipsum dolor sit amet.</h1>
        Path to images as from index.html file 
       <img src="./img/javascript.svg" alt="" />
     </section> -->
 
     <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+    
+    <section class="cards">
+    <div class="container">
+        <ul class="cards__list">
+            <!-- CARD EXAMPLE  -->
+            <li class="cards__item">
+                <img src="/Vite_vanilla-app-template/assets/placeholderimg-64cf4f75.png" alt="Concert image."
+                    class="cards__img">
+                <div class="cards__item-contentb">
+                    <h1 class="cards__title">Eurovision 2021 finals!</h1>
+                    <h2 class="cards__subtitle">2021-05-13</h2>
+                    <p class="cards__text"><svg class="cards__svg"><use
+                                href="/Vite_vanilla-app-template/assets/symbol-defs-30b434f5.svg#icon-arrow"></use></svg>Palace
+                        of Ukraine</p>
+                </div>
+            </li>
+            <li class="cards__item">
+                <img src="/Vite_vanilla-app-template/assets/placeholderimg-64cf4f75.png" alt="Concert image."
+                    class="cards__img">
+                <div class="cards__item-contentb">
+                    <h1 class="cards__title">Eurovision 2021 finals!</h1>
+                    <h2 class="cards__subtitle">2021-05-13</h2>
+                    <p class="cards__text"><svg class="cards__svg"><use
+                                href="/Vite_vanilla-app-template/assets/symbol-defs-30b434f5.svg#icon-arrow"></use></svg>Palace
+                        of Ukraine</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="cards__schedule">
+            <!-- LINK EXAMPLE  -->
+            <li class="cards__schedule-item active-page">
+                <p class="cards__schedule-text">1</p>
+            </li>
+            <li class="cards__schedule-item">
+                <p class="cards__schedule-text">2</p>
+            </li>
+            <li class="cards__schedule-item">
+                <p class="cards__schedule-text">3</p>
+            </li>
+            <li class="cards__schedule-item">
+                <p class="cards__schedule-text">4</p>
+            </li>
+            <li class="cards__schedule-item">
+                <p class="cards__schedule-text">5</p>
+            </li>
+        </ul>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/Vite_vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
 </section>
-
+    
+    
 
     
   </body>
