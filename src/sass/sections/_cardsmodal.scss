@@ -5,9 +5,14 @@
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  opacity: 0;
+  opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is__hidden{
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -17,7 +22,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.65);
 
   @media screen and (min-width: 480px) {
     width: 272px;
@@ -84,7 +89,11 @@
     gap: 20px;
   }
 
-  &__item {
+  &__item:nth-child(5) &__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 13px;
   }
 
   &__subtitle {
@@ -94,6 +103,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 7px;
   }
 
   &__text {
@@ -104,21 +114,6 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 20px;
-
-    &:nth-child(5) {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: row-reverse;
-      gap: 13px;
-    }
-    &:nth-child(6) {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: row-reverse;
-      gap: 13px;
-    }
   }
 
   &__svg {
@@ -139,6 +134,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out,
+      transform 300ms ease-in-out, border 300ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #4c00fe;
+      border: #4c00fe solid 1px;
+      box-shadow: 0 0 40px 40px #fff inset;
+    }
   }
 
   &__txt {
@@ -158,15 +163,37 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 45px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out,
+      transform 300ms ease-in-out;
+
+    &:hover {
+      color: #fff;
+      box-shadow: 0 0 40px 40px #4c00fe inset;
+      transform: scale(1.1);
+    }
   }
 
   &__close {
     width: 25px;
     height: 25px;
     position: absolute;
-    fill: #4c00fe;
     top: 17px;
     right: 21px;
     background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 300ms ease-in-out;
+
+    &:hover {
+      transform: rotate(90deg) scale(1.2);
+    }
+  }
+
+  &__csvg {
+    width: 25px;
+    height: 25px;
+    fill: #4c00fe;
   }
 }
