@@ -1,8 +1,8 @@
-      <section class="hero">
+  <section class="hero">
          <div class="container">
         <div class="hero__logo-box">
           <svg class="hero__logo" >
-            <use href=""></use>
+            <use href="../img/symbol-defs.svg#hero-logo"></use>
           </svg>
         </div>
 
@@ -21,13 +21,14 @@
             />
           </label>
 
-          <label class="hero__label">
-            <input
-              type="text"
-              name="country"
-              class="hero__inp"
-              placeholder="Choose country"
-            />
+      <select name="pets" id="pet-select" class="hero__country">
+  <option value="" class="hero__option">Choose country</option>
+<option value="US">United States</option>
+  <option value="GB">Great Britain</option>
+  <option value="DE">Germany</option>
+  <option value="PL">Poland</option>
+  <option value="CA">Canada</option>
+</select>
           </label>
         </form>
         </div>
