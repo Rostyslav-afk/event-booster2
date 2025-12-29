@@ -88,13 +88,11 @@ body {
     padding-bottom: 193px;
   }
 }
-
 .hero__logo {
   position: absolute;
   top: 40px;
   left: 40px;
 }
-
 .hero__title {
   color: #dc56c5;
   text-align: center;
@@ -116,7 +114,6 @@ body {
     margin-bottom: 52px;
   }
 }
-
 .hero__form {
   gap: 30px;
   justify-content: center;
@@ -133,7 +130,6 @@ body {
     justify-content: center;
   }
 }
-
 .hero__input {
   padding: 10px 118px 10px 30px;
   border: none;
@@ -159,7 +155,6 @@ body {
     margin-bottom: 0;
   }
 }
-
 .hero__inp {
   padding: 10px 113px 10px 30px;
   border: none;
