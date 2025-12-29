@@ -25,16 +25,16 @@
     padding-top: 53px;
     padding-bottom: 193px;
   }
-}
 
-.hero__logo {
+
+&__logo {
   position: absolute;
   top: 40px;
   left: 40px;
   
 }
 
-.hero__title {
+&__title {
   color: #dc56c5;
   text-align: center;
   font-family: 'Montserrat';
@@ -54,7 +54,7 @@
   }
 }
 
-.hero__form {
+&__form {
   gap: 30px;
   justify-content: center;
 
@@ -69,7 +69,7 @@
   }
 }
 
-.hero__input {
+&__input {
   padding: 10px 118px 10px 30px;
   border: none;
   border-radius: 20px;
@@ -93,7 +93,7 @@
   }
 }
 
-.hero__inp {
+&__inp {
   padding: 10px 113px 10px 30px;
   border: none;
   border-radius: 20px;
@@ -112,4 +112,5 @@
   @media screen and (min-width: 1200px) {
     padding: 10px 113px 10px 30px;
   }
+}
 }
