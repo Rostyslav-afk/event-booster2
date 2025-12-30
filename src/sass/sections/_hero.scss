@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 112px;
   display: flex;
@@ -26,91 +27,132 @@
     padding-bottom: 193px;
   }
 
+  &__logo-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 105px;
+    height: 90px;
+    border-radius: 0 0 100% 0;
+    background: linear-gradient(
+      136deg,
+      rgba(196, 196, 196, 0.03) 10.75%,
+      rgba(196, 196, 196, 0) 92.33%
+    );
+    backdrop-filter: blur(15px);
 
-&__logo {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  
-}
+    @media screen and (min-width: 768px) {
+      width: 179px;
+      height: 151px;
+    }
 
-&__title {
-  color: #dc56c5;
-  text-align: center;
-  font-family: 'Montserrat';
-  font-size: 18px;
-  font-weight: 900;
-  line-height: normal;
-  margin-bottom: 25px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 30px;
-    margin-bottom: 27px;
+    @media screen and (min-width: 1200px) {
+        width: 239px;
+    height: 190px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 50px;
-    margin-bottom: 52px;
+  &__logo {
+    width: 60px;
+    height: 40px;
+    fill: #ffffff;
+    margin-top: 24px;
+margin-bottom: 35px;
+
+    @media screen and (min-width: 768px) {
+      width: 103px;
+      height: 50px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 136px;
+      height: 68px;
+      margin-top: 37px;
+      margin-bottom: 95px;
+    }
   }
-}
 
-&__form {
-  gap: 30px;
-  justify-content: center;
+  &__title {
+    color: #dc56c5;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 25px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+      margin-bottom: 27px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 50px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__form {
+    gap: 30px;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-&__input {
-  padding: 10px 118px 10px 30px;
-  border: none;
-  border-radius: 20px;
-  //   color:#A9A9A9;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  font-family: 'Montserrat';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 25px;
-
-  @media screen and (min-width: 768px) {
+  &__input {
     padding: 10px 118px 10px 30px;
-    margin-bottom: 0;
+    border: none;
+    border-radius: 20px;
+      color:#A9A9A9;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+      padding: 10px 118px 10px 30px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 118px 10px 30px;
+      margin-bottom: 0;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    padding: 10px 118px 10px 30px;
-    margin-bottom: 0;
-  }
-}
-
-&__inp {
-  padding: 10px 113px 10px 30px;
-  border: none;
-  border-radius: 20px;
-  //   color:#A9A9A9;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  font-family: 'Montserrat';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-
-  @media screen and (min-width: 768px) {
+  &__country{
     padding: 10px 113px 10px 30px;
-  }
+    border: none;
+    border-radius: 20px;
+      color:#A9A9A9;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+     appearance: none;
+       z-index: 10;
 
-  @media screen and (min-width: 1200px) {
-    padding: 10px 113px 10px 30px;
-  }
-}
+    @media screen and (min-width: 768px) {
+      padding: 10px 113px 10px 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 113px 10px 30px;
+    }
+  } 
 }
