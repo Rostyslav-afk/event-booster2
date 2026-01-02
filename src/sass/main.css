@@ -241,6 +241,14 @@ body {
   }
 }
 
+::-moz-placeholder {
+  color: #A9A9A9;
+}
+
+::placeholder {
+  color: #A9A9A9;
+}
+
 .cards {
   padding-top: 20px;
 }
