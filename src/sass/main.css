@@ -56,10 +56,25 @@ body {
 }
 
 .container {
-  max-width: 1050px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
   outline: 1px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 290px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 594px;
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1050px;
+  }
 }
 
 .hero {
@@ -232,13 +247,23 @@ body {
 .cards__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 56px;
+  gap: 14px;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .cards__list {
+    gap: 27px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__list {
+    gap: 56px;
+  }
 }
 .cards__item {
   border-radius: 5%;
-  width: 196px;
-  height: 312px;
+  width: 138px;
+  height: 242px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,39 +273,66 @@ body {
   transform: translateY(-6px);
   box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: 196px;
+    height: 312px;
+  }
+}
 .cards__img {
-  width: 180px;
-  height: 227px;
+  width: 128px;
+  height: 161px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 768px) {
+  .cards__img {
+    width: 180px;
+    height: 227px;
+  }
+}
 .cards__item-contentb {
-  margin-top: 8px;
+  margin-top: 5px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cards__item-contentb {
+    margin-top: 5px;
+  }
 }
 .cards__title {
   color: #dc56c5;
   text-align: center;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .cards__title {
+    font-size: 16px;
+  }
 }
 .cards__subtitle {
   color: #fff;
   text-align: center;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .cards__subtitle {
+    font-size: 16px;
+  }
 }
 .cards__text {
   color: #fff;
   text-align: center;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -289,17 +341,33 @@ body {
   justify-content: center;
   gap: 3px;
 }
+@media screen and (min-width: 768px) {
+  .cards__text {
+    font-size: 14px;
+  }
+}
 .cards__svg {
-  width: 7px;
-  height: 10px;
+  width: 6px;
+  height: 9px;
   fill: #fff;
+}
+@media screen and (min-width: 768px) {
+  .cards__svg {
+    width: 7px;
+    height: 10px;
+  }
 }
 .cards__schedule {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin-top: 80px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .cards__schedule {
+    margin-top: 80px;
+  }
 }
 .cards__schedule-item {
   width: 30px;
@@ -320,10 +388,15 @@ body {
   color: #fff;
   text-align: center;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .cards__schedule-text {
+    font-size: 16px;
+  }
 }
 
 .backdrop {
