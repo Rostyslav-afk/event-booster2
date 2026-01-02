@@ -1,12 +1,12 @@
 {
-  "name": "Vite_vanilla-app-template",
+  "name": "event-booster2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tate-t.github.io/Vite_vanilla-app-template/",
+  "homepage": "https://github.com/Rostyslav-afk/event-booster2",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Vite_vanilla-app-template/",
+    "build": "vite build --base=/event-booster2/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
