@@ -458,6 +458,17 @@ body {
     padding-left: 39px;
     padding-right: 21px;
   }
+  .footer {
+color: #939393;
+font-family: Montserrat;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+padding-top: 90px;
+padding-bottom: 20px;
+}
 }
 .modal .rectangle {
   width: 144px;
