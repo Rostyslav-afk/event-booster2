@@ -522,18 +522,19 @@ body {
 }
 .modal__image {
   display: none;
+  aspect-ratio: 3/4;
+  height: auto;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .modal__image {
     display: block;
     width: 233px;
-    height: 416px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal__image {
     width: 360px;
-    height: 641px;
   }
 }
 .modal__list {
