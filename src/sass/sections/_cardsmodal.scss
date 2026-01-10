@@ -16,7 +16,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   opacity: 1;
   z-index: 11;
-  pointer-events: auto; 
+  pointer-events: auto;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -109,6 +109,9 @@
 
   &__image {
     display: none;
+    aspect-ratio: 3 / 4; // або 9 / 16, залежно від макету
+    height: auto;
+    width: 100%;
 
     @media screen and (min-width: 480px) {
     }
@@ -116,12 +119,12 @@
     @media screen and (min-width: 768px) {
       display: block;
       width: 233px;
-      height: 416px;
+      // height: 416px;
     }
 
     @media screen and (min-width: 1200px) {
       width: 360px;
-      height: 641px;
+      // height: 641px;
     }
   }
 

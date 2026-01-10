@@ -8,6 +8,7 @@ const cardsSchedule = document.querySelector('.cards__schedule');
 let currentPage = 0;
 let totalPage = 1;
 
+export let ticketsData = [];
 
 async function renderTicket(page = 0) {
   try {
@@ -22,10 +23,12 @@ async function renderTicket(page = 0) {
     totalPage = data?.page?.totalPages > 50 ? 50 : data?.page?.totalPages || 1;
     currentPage = page;
 
+    ticketsData = tickets;
+
     const markup = tickets
       .map(
         item => `
-        <li class="cards__item">
+        <li class="cards__item" data-id="${item.id}">
             <img src="${item.images?.[0]?.url || '/img/placeholderimg.png'}" 
                  alt="${item.name}"
                  class="cards__img">
@@ -47,8 +50,8 @@ async function renderTicket(page = 0) {
 
     renderPagination();
   } catch (error) {
-    console.error('Помилка:', error);
-    listEl.innerHTML = '<p>Помилка завантаження даних.</p>';
+    console.error('Error:', error);
+    listEl.innerHTML = '<p>Error</p>';
     cardsSchedule.innerHTML = '';
   }
 }
