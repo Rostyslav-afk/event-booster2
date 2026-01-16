@@ -58,7 +58,6 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -91,6 +90,13 @@ body {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.5)), url(../img/bghero.webp);
+  transform: scale(1.04);
+  animation: bodyEnter 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes bodyEnter {
+  to {
+    transform: scale(1);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -191,7 +197,7 @@ body {
   padding: 10px 118px 10px 30px;
   border: none;
   border-radius: 20px;
-  color: #A9A9A9;
+  color: #a9a9a9;
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -222,7 +228,7 @@ body {
   padding: 10px 113px 10px 30px;
   border: none;
   border-radius: 20px;
-  color: #A9A9A9;
+  color: #a9a9a9;
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -252,11 +258,11 @@ body {
 }
 
 ::-moz-placeholder {
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 
 ::placeholder {
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 
 .cards {
@@ -267,6 +273,8 @@ body {
   flex-wrap: wrap;
   gap: 14px;
   justify-content: center;
+  transform: scale(1.04);
+  animation: bodyEnter 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 @media screen and (min-width: 768px) {
   .cards__list {
@@ -276,6 +284,11 @@ body {
 @media screen and (min-width: 1200px) {
   .cards__list {
     gap: 56px;
+  }
+}
+@keyframes bodyEnter {
+  to {
+    transform: scale(1);
   }
 }
 .cards__item {
@@ -696,4 +709,11 @@ body {
   text-align: center;
   padding-top: 90px;
   padding-bottom: 20px;
+  transform: scale(1.04);
+  animation: bodyEnter 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes bodyEnter {
+  to {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=main.css.map */

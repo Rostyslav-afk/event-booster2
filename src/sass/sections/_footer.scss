@@ -1,11 +1,20 @@
-  .footer {
-color: #939393;
-font-family: Montserrat;
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-padding-top: 90px;
-padding-bottom: 20px;
+.footer {
+  color: #939393;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 20px;
+
+  transform: scale(1.04);
+  animation: bodyEnter 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes bodyEnter {
+    to {
+      transform: scale(1);
+    }
+  }
 }
